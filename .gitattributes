@@ -1,4 +1,4 @@
 # Auto detect text files and perform LF normalization
 * text=auto
-.html* linguist-vendored
-style.css* linguist-vendored
+classroom04/ex001.html* linguist-vendored
+classroom04/style.css* linguist-vendored
