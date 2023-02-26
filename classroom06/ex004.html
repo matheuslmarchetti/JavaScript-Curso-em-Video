@@ -10,7 +10,8 @@
 <body>
     <script>
         var where = window.prompt("Where are you from?")
-        document.write(`Did you know ${where} there are ${where.length} letters!`)
+        document.write(`Did you know <strong>${where}</strong> there are ${where.length} letters!<br>`);
+        document.write(`${where} in to upper case is: ${where.toUpperCase()}`);
     </script>
 </body>
 </html>
