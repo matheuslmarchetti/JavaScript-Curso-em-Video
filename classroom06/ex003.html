@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Sum</title>
+</head>
+<body>
+    <h1>This is the sum!</h1>
+    <p>Result: <span class="sum">" "</span></p>
+    <script>
+        var n1 = Number.parseFloat(window.prompt("Enter a number: "));
+        var n2 = Number.parseFloat(window.prompt("Enter another number: "));
+        window.alert(`The sum ${n1} with ${n2} will be on the screen click on 'OK'`)
+        var s = n1 + n2;
+        var sum = document.querySelector(".sum");
+        sum.textContent = s;
+    </script>
+</body>
+</html>
