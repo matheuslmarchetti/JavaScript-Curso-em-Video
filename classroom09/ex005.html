@@ -8,12 +8,20 @@
     <title>My first steps with DOM</title>
 </head>
 <body>
-    <h1>Starting studies DOM</h1>
+    <h1 class="title">Starting studies DOM</h1>
     <p>Here go the result.</p>
-    <p>Learning to use <strong>DOM</strong> in the JavaScript.</p>
-    <div>Click Here</div>
+    <p id="p2">Learning to use <strong name="dom">DOM</strong> in the JavaScript.</p>
+    <div id="msg">Click Here</div>
     <script>
-        var p1 = window.document.getElementsByTagName("p")[0]
+        var p1 = window.document.getElementsByTagName("p")[0];
+        window.document.write(`It is written like this: ${p1.innerText}`);
+        p1.style.color = "yellow";
+        var divMsg = document.getElementById("msg");
+        divMsg.style.backgroundColor = "gray";
+        var getName = document.getElementsByName("dom")[0];
+        getName.style.color = "red";
+        var p2 = document.querySelector("p#p2");
+        p2.style.backgroundColor = "purple";
     </script>
 </body>
 </html>
