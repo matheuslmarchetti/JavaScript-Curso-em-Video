@@ -1,0 +1,6 @@
+body {
+    margin: 0 auto;
+    padding-top: 100px;
+    background: linear-gradient(270deg, rgb(223, 214, 214), rgb(197, 211, 0));
+    text-align: center;
+}
