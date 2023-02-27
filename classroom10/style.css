@@ -22,6 +22,12 @@ body {
     text-align: center;
 }
 
+.center {
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 50px;
+}
+
 .inline {
     display: inline;
 }
