@@ -26,8 +26,21 @@ body {
     margin: 0 auto;
     text-align: center;
     padding-top: 50px;
+    font: normal 20pt Arial;
+}
+
+input {
+    width: 100px;
+    font: normal 20pt Arial;
 }
 
 .inline {
     display: inline;
+}
+ 
+#res {
+    padding-top: 20px;
+    padding-right: 50px;
+    font: bold 20pt Arial;
+    color: blue;
 }
