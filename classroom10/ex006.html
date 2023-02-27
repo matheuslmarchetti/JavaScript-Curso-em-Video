@@ -8,8 +8,22 @@
     <title>DOM Events</title>
 </head>
 <body>
-    <div id="area">
-        interact...
+    <div class="container">
+        <div id="area" onclick="clickmouse()" onmouseenter="entermouse()" onmouseout="outmouse()">
+            interact...
+        </div>
     </div>
+    <script>
+        var area = document.querySelector("div#area");
+        function clickmouse() {
+            area.innerText = "Hello!";
+        }
+        function entermouse() {
+            area.innerText = "Enter!";
+        }
+        function outmouse() {
+            area.innerText = "Out!";
+        }
+    </script>
 </body>
 </html>
