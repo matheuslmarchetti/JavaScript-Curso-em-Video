@@ -1,0 +1,14 @@
+body {
+    margin: 0 auto;
+    background-color: gray;
+}
+
+#area {
+    font: normal 20pt Arial;
+    background-color: black;
+    color: rgb(141, 0, 99);
+    width: 200px;
+    height: 200px;
+    line-height: 200px;
+    text-align: center;
+}
