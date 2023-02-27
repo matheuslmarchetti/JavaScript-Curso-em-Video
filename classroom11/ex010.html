@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maxima Speed</title>
+</head>
+<body>
+    <h1>Fine System</h1>
+    Car Speed: <input type="number" name="txtspeed" id="txtspeed"> Km/h
+    <input type="button" value="To Check" onclick="add()">
+    <div id="res">
+
+    </div>
+    <script>
+        function add() {
+            var txtsd = document.querySelector("input#txtspeed");
+            var res = document.querySelector("div#res");
+            var speed = Number(txtsd.value);
+            res.innerHTML = `<p>Your speed current is<strong> ${speed}Km/h</strong></p>.`
+        }
+    </script>
+</body>
+</html>
