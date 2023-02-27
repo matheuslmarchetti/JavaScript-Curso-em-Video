@@ -8,6 +8,23 @@
     <title>Living Country</title>
 </head>
 <body>
-    
+    <h1>What do you living?</h1>
+    Are you living in <input type="text" name="txtcountry" id="txtcountry">
+    <input type="button" value="To Check" onclick="tocheck()">
+    <div id="res">
+
+    </div>
+    <script>
+        function tocheck() {
+            var country = document.querySelector("input#txtcountry");
+            var res = document.querySelector("div#res");
+            res.innerHTML = `<p>Cool! You are  living: <strong>${country}</strong></p>`
+            if (country == "Brazil") {
+                res.innerHTML += `<p>You are Brazilian.</p>`
+            } else {
+                res.innerHTML += `<p>You are Foreigner.</p>`
+            }
+        }
+    </script>
 </body>
 </html>
