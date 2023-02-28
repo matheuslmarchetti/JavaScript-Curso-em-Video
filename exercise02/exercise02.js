@@ -2,8 +2,7 @@ function load() {
     var msg = document.querySelector("div#msg")
     var photos = document.querySelector("div#dawn")
     var date = new Date()
-    //var hour = date.getHours()
-    var hour = 17
+    var hour = date.getHours()
     msg.innerHTML = `Now are ${hour} hours.`
     if (hour >= 6 && hour < 12) {
         //Morning!
