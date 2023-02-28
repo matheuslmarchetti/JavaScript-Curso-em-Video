@@ -19,7 +19,7 @@ function load() {
     } else {
         //Night!
         document.getElementById("imgdefault").src = "https://source.unsplash.com/random/?night"
-        document.querySelector("section").style.background = "0c0c0cd0";
+        document.querySelector("section").style.background = "black";
         document.querySelector("section").style.color = "white";
     }
 }
