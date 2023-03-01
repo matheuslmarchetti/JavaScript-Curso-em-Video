@@ -61,4 +61,8 @@ footer > p > a:hover {
         height: 200px;
         border-radius: 100%;
     }
+
+    footer {
+        max-width: 100%;
+    }
 }
