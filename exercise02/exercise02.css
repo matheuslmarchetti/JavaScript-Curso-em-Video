@@ -68,4 +68,8 @@ footer > p > a:hover {
         height: 200px;
         border-radius: 100%;
     }
+    
+    footer {
+        font-size: small;
+    }
 }
