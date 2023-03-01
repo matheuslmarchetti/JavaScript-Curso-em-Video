@@ -32,7 +32,7 @@ div {
 
 /* End section */
 footer {
-    width: 100vw;
+    max-width: 100%;
     font-style: italic;
     display: flex;
     flex-direction: row;
@@ -60,9 +60,5 @@ footer > p > a:hover {
         width: 200px;
         height: 200px;
         border-radius: 100%;
-    }
-
-    footer {
-        max-width: 100%;
     }
 }
