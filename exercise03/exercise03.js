@@ -15,6 +15,7 @@ function toChecker() {
             gender = "Female";
             if (age >= 0 && age < 10) {
                 //Children
+                img.setAttribute("src", "https://source.unsplash.com/random/?clock");
             } else if ( age >= 10 && age < 21) {
                 //Young
             } else if ( age < 50) {
@@ -35,5 +36,6 @@ function toChecker() {
             }
         }
         result.innerHTML = `We detected an ${age} year old ${gender}.`
+        result.appendChild(img);
     }
 }
