@@ -36,3 +36,20 @@ footer > p > a {
 footer > p > a:hover {
     color: rgb(0, 39, 168);
 }
+
+/* Mobile */
+@media only screen and (max-width: 600px) {
+    section {
+        width: 300px;
+    }
+
+    #imgdefault {
+        width: 200px;
+        height: 200px;
+        border-radius: 100%;
+    }
+    
+    footer {
+        font-size: small;
+    }
+}
