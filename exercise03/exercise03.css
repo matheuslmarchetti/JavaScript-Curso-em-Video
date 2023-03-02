@@ -56,16 +56,19 @@ footer > p > a:hover {
 @media only screen and (max-width: 600px) {
     section {
         width: 300px;
+        height: 400px;
     }
 
     #result {
-        max-width: 200px;
+        max-width: 250px;
+        margin: auto;
     }
 
     #photos {
         width: 200px;
         height: 200px;
         border-radius: 100%;
+        margin-top: 2px;
     }
     
     footer {
