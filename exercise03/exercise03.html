@@ -13,10 +13,23 @@
     </header>
     <section>
         <div>
-            Test....
+            <p>
+                Year of birth:
+                    <input type="number" name="txtyear" id="txtyear" min="0" max="105">
+            </p>
+            <p>
+                Gender:
+                <input type="radio" name="radgender" id="fem" checked>
+                <label for="fem">Female</label>
+                <input type="radio" name="radgender" id="male">
+                <label for="male">Male</label>
+            </p>
+            <p>
+                <input type="button" value="Checker" onclick="toChecker()">
+            </p>
         </div>
         <div id="result">
-            Test....
+            Fill in the information above to see the result!
         </div>
     </section>
     <footer>
