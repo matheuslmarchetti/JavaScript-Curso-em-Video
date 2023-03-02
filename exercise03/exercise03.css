@@ -58,7 +58,7 @@ footer > p > a:hover {
         width: 300px;
     }
 
-    div > p {
+    #result {
         max-width: 200px;
     }
 
