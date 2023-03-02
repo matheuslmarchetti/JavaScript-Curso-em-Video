@@ -58,6 +58,10 @@ footer > p > a:hover {
         width: 300px;
     }
 
+    div > p {
+        max-width: 200px;
+    }
+
     #photos {
         width: 200px;
         height: 200px;
