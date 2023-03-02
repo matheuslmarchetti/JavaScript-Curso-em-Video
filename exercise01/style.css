@@ -19,7 +19,7 @@ section {
 }
 
 footer {
-    width: 100vw;
+    width: 100%;
     font-style: italic;
     display: flex;
     flex-direction: row;
@@ -27,6 +27,9 @@ footer {
     align-items: center;
     position: fixed;
     bottom: 0;
+    left: 0;
+    margin: 0;
+    background-color: rgb(36, 35, 35);
 }
 
 footer > p > a {

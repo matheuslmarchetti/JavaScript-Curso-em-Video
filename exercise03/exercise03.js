@@ -15,24 +15,31 @@ function toChecker() {
             gender = "Female";
             if (age >= 0 && age < 10) {
                 //Children
-                img.setAttribute("src", "https://source.unsplash.com/random/?child");
+                img.setAttribute("src", "https://source.unsplash.com/random/?little-girl");
             } else if ( age >= 10 && age < 21) {
                 //Young
+                img.setAttribute("src", "https://source.unsplash.com/random/?teen-girl");
             } else if ( age < 50) {
                 //Adult
+                img.setAttribute("src", "https://source.unsplash.com/random/?grown-woman");
             } else {
                 //Elderly
+                img.setAttribute("src", "https://source.unsplash.com/random/?elderly-woman");
             }
         } else if (formGender[1].checked) {
             gender = "Male";
             if (age >= 0 && age < 10) {
                 //Children
+                img.setAttribute("src", "https://source.unsplash.com/random/?little-boy");
             } else if ( age >= 10 && age < 21) {
                 //Young
+                img.setAttribute("src", "https://source.unsplash.com/random/?teen-boy");
             } else if ( age < 50) {
                 //Adult
+                img.setAttribute("src", "https://source.unsplash.com/random/?adult-male");
             } else {
                 //Elderly
+                img.setAttribute("src", "https://source.unsplash.com/random/?elderly-man");
             }
         }
         result.innerHTML = `We detected an ${age} year old ${gender}.`

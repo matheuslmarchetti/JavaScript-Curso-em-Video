@@ -1,5 +1,5 @@
 body {
-    background: rgb(26, 25, 25);
+    background: linear-gradient(270deg, #bb2d2d, #131e97);
     font: normal 15pt Arial;
     color: white;
 }
@@ -9,13 +9,13 @@ header {
 }
 
 section {
-    background-color: white;
+    background-color: rgb(255, 255, 255);
     color: black;
     border-radius: 10px;
     padding: 15px;
     width: 500px;
     margin: auto;
-    box-shadow: 2px 2px 10px rgb(134, 0, 123);
+    box-shadow: 2px 2px 10px rgb(0, 2, 2);
 }
 
 div {
@@ -30,7 +30,7 @@ div {
 }
 
 footer {
-    width: 100vw;
+    width: 100%;
     font-style: italic;
     display: flex;
     flex-direction: row;
@@ -38,6 +38,9 @@ footer {
     align-items: center;
     position: fixed;
     bottom: 0;
+    left: 0;
+    margin: 0;
+    background-color: rgb(36, 35, 35);
 }
 
 footer > p > a {
@@ -54,7 +57,7 @@ footer > p > a:hover {
         width: 300px;
     }
 
-    #imgdefault {
+    #photos {
         width: 200px;
         height: 200px;
         border-radius: 100%;
