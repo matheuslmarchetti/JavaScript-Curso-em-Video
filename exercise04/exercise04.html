@@ -12,22 +12,25 @@
         <h1>Let's count</h1>
     </header>
     <section>
-        <div>
-            Start:
-            <input type="number" name="start" id="start">
+        <div id="data">
+            <p>
+                Start:
+                <input type="number" name="start" id="txtstart">
+            </p>
+            <p>
+                End:
+                <input type="number" name="end" id="txtend">
+            </p>
+            <p>
+                Steps:
+                <input type="number" name="steps" id="txtsteps">
+            </p>
+            <p>
+                <input type="button" value="Count" onclick="letCount()">
+            </p>
         </div>
-        <div>
-            End:
-            <input type="number" name="end" id="end">
-            
-        </div>
-        <div>
-            Steps:
-            <input type="number" name="steps" id="steps">
-        </div>
-        <input type="button" value="Count">
         <div id="result">
-            Counting:
+            The result will appear here!
         </div>
     </section>
     <footer>
