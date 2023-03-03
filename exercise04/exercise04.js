@@ -7,13 +7,13 @@ function letCount() {
         result.innerHTML = "Impossible to count!"
         alert("ERRO!");
     } else {
-        result.innerHTML = "Counting:"
+        result.innerHTML = "Counting: <br>"
         let startvalue = Number(start.value)
         let endvalue = Number(end.value)
         let stepsvalue = Number(steps.value)
         if (stepsvalue <= 0) {
             alert("Invalid step! Considering Steps = 1.");
-            startvalue = 1
+            stepsvalue = 1
         }
         if (startvalue < endvalue) {
             //Count Up
