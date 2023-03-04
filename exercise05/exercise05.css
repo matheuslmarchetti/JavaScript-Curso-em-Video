@@ -24,7 +24,6 @@ header {
 }
 
 section {
-    /* background-color: rgb(77, 75, 72); */
     background: linear-gradient( rgb(24, 22, 22), rgb(31, 31, 37));
     color: rgb(0, 255, 85);
     border-radius: 10px;
