@@ -16,15 +16,18 @@
             <p>
                 Number:
                 <input type="number" name="number" id="txtnumber">
-                <input type="button" value="Generate" onclick="toGenerate()">
+                <input type="button" value="Generate" id="button" onclick="toGenerate()">
             </p>
         </div>
         <div>
             <p id="msg">Enter a number above.</p>
             <div>
-                <select name="multiplicationtable" id="result" size="10">
+                <ul id="result">
+                    <li>The result will appear here.</li>
+                </ul>
+                <!-- <select name="multiplicationtable" id="result" size="10">
                     <option value="">The result will appear here.</option>
-                </select>
+                </select> -->
             </div>
         </div>
     </section>
