@@ -6,3 +6,5 @@
 <a href="https://matheuslmarchetti.github.io/JavaScript-Curso-em-Video/exercise03/exercise03.html" target="_blank">Age Checker</a>
 
 <a href="https://matheuslmarchetti.github.io/JavaScript-Curso-em-Video/exercise04/exercise04.html" target="_blank">Let's Count</a>
+
+<a href="https://matheuslmarchetti.github.io/JavaScript-Curso-em-Video/exercise05/exercise05.html" target="_blank">Multiplication Table</a>
