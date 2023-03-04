@@ -6,12 +6,9 @@ function toGenerate() {
         alert("ERROR! Click on 'OK' to receive the explanation.");
         message.innerHTML = "You need to choose a number. Try again!";
         theResult.innerHTML = ""
-        let divNew = document.createElement("div");
-        let divNewContent = document.createTextNode("The result will appear here.");
-        divNew.appendChild(divNewContent);
-        let theSelect = document.getElementById("result");
-        parentTheSelect = theSelect.parentNode;
-        parentTheSelect.replaceChild(divNew, theSelect);
+        let item = document.createElement("option");
+            item.text = `The result will appear here.`;
+            theResult.appendChild(item);
     } else {
         message.innerHTML = `This is the result of the ${Number(number.value)} Multiplication Table. Check it out below!`;
         let numberValue = Number(number.value);
