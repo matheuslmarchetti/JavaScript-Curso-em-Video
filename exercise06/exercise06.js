@@ -36,3 +36,15 @@ function toClean() {
         position.appendChild(itemList);
     }
 }
+// Create Elements Array
+let addNumbers = document.querySelector("#toaddnumber");
+let arrayNumbers = [];
+function createArray() {
+    arrayNumbers.push(addNumbers.value);
+    console.log(arrayNumbers);
+}
+// Delete Elements Array
+function deleteArray() {
+    arrayNumbers.pop();
+    console.log(arrayNumbers);
+}
