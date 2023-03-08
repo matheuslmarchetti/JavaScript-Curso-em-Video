@@ -19,19 +19,14 @@ function inList(n, l) {
 function toAdd() {
     let number = Number(txtNumber.value);
     let toCleanItem = document.querySelector("#itemlist");
-    let resultItem = document.querySelector("#result"); // Limpar DIV Elements Result
+    let resultItem = document.querySelector("#result"); // Clean DIV Elements Result
     if (txtNumber.value.length == "") {
         alert("You need add a number!");
     } else if (number < 1 || number > 100) {
         alert("You need add a number between 1 and 100.");
     }  else if (isNumber(number) && !inList(number, theValues)) {
-        toCleanItem?.remove();
-        // Limpar DIV Elements Result
-        while (resultItem.firstElementChild) {
-            resultItem.removeChild(resultItem.lastElementChild);
-        }
-        // Limpar DIV Elements Result
-        theValues.push(number);
+        theValues.push(number); // Add Elements Array
+        toCleanItem?.remove();        
         let itemNew = document.createElement("li");
         itemNew.setAttribute( "class", "newli");
         let itemNewText = document.createTextNode(`You added the number: ${number}.`);
@@ -41,41 +36,42 @@ function toAdd() {
         let list = document.querySelector("ul#list");
         let itemFirstLi = list.getElementsByTagName("li")[0];
         itemFirstLi.setAttribute("class" , "firstitem");
+        // Clean DIV Elements Result
+        while (resultItem.firstElementChild) {
+            resultItem.removeChild(resultItem.lastElementChild);
+        }
+        // Clean DIV Elements Result
     } else {
         alert("This number already gone added! You need to insert other number.");
     }
     txtNumber.value = "";
     txtNumber.focus();
 }
-// Button Clean
-function toClean() {
-    let number = Number(txtNumber.value);
+// Button Remove
+function toRemove() {
     let newli = document.querySelector(".newli");
     let firstitem = document.querySelector(".firstitem");
-    let resultItem = document.querySelector("#result"); // Limpar DIV Elements Result
+    let resultItem = document.querySelector("#result"); // Clean DIV Elements Result
     if (newli) {
-        newli?.remove() 
-        // Limpar DIV Elements Result
-        while (resultItem.firstElementChild) {
-            resultItem.removeChild(resultItem.lastElementChild);
-        }
-        // Limpar DIV Elements Result
-        theValues.pop(number);
+        newli?.remove();
+        theValues.pop(); // Delete Elements Array
     } else if (firstitem) {
         firstitem?.remove();
-        theValues.pop(number);
+        theValues.pop(); // Delete Elements Array
+        //Create LI Element Default
         let itemList = document.createElement("li");
         itemList.setAttribute( "id", "itemlist");
         let itemListText = document.createTextNode(`The numbers added appear here.`);
         itemList.appendChild(itemListText);
         let itemListPosition = document.getElementsByTagName("ul")[0];
         itemListPosition.appendChild(itemList);
-        // Limpar DIV Elements Result
-        while (resultItem.firstElementChild) {
-            resultItem.removeChild(resultItem.lastElementChild);
-        }
-        // Limpar DIV Elements Result
+        //Create LI Element Default
     }
+    // Clean DIV Elements Result
+    while (resultItem.firstElementChild) {
+        resultItem.removeChild(resultItem.lastElementChild);
+    }
+    // Clean DIV Elements Result
     txtNumber.focus();
 }
 // Button Finalize
@@ -85,11 +81,11 @@ buttonFinalize.onclick = function toFinalize() {
     if (theValues.length == 0) {
         alert("You need to add a number, before to finalize.");
     } else {
-        // Limpar DIV Elements Result
+        // Clean DIV Elements Result
         while (result.firstElementChild) {
             result.removeChild(result.lastElementChild);
         }
-        // Limpar DIV Elements Result
+        // Clean DIV Elements Result
         let totalElements = theValues.length;
         let bigger = theValues[0];
         let smaller = theValues[0];
@@ -111,4 +107,31 @@ buttonFinalize.onclick = function toFinalize() {
         result.innerHTML += `<p class="itemdivresult">The sum of all numbers is: ${sum}.</p>`
         result.innerHTML += `<p class="itemdivresult">The average of the numbers registered is: ${average}.</p>`
     }   
+}
+// Button Clean All
+let list = document.querySelector("#list")
+let firstitem = document.querySelector(".firstitem");
+let buttonCleanAll = document.querySelector("#buttoncleanall");
+buttonCleanAll.onclick = function toCleanAll() {
+    let number = Number(txtNumber.value);
+    firstitem?.remove();
+    // Clean UL Elements Result
+    while (list.firstElementChild) {
+        list.removeChild(list.lastElementChild);
+        theValues.pop(); // Delete Elements Array
+    }
+    // Clean UL Elements Result
+    //Create LI Element Default
+    let itemList = document.createElement("li");
+    itemList.setAttribute( "id", "itemlist");
+    let itemListText = document.createTextNode(`The numbers added appear here.`);
+    itemList.appendChild(itemListText);
+    let itemListPosition = document.getElementsByTagName("ul")[0];
+    itemListPosition.appendChild(itemList);
+    //Create LI Element Default
+    // Clean DIV Elements Result
+    while (result.firstElementChild) {
+        result.removeChild(result.lastElementChild);
+    }
+    // Clean DIV Elements Result
 }
