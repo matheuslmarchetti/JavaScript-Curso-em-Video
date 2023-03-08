@@ -51,9 +51,11 @@ function toAdd() {
 function toRemove() {
     let newli = document.querySelector(".newli");
     let firstitem = document.querySelector(".firstitem");
+    let listAdded = document.querySelector("#list");
     let resultItem = document.querySelector("#result"); // Clean DIV Elements Result
     if (newli) {
-        newli?.remove();
+        listAdded.removeChild(listAdded.lastElementChild);
+        //newli?.remove();
         theValues.pop(); // Delete Elements Array
     } else if (firstitem) {
         firstitem?.remove();
@@ -106,7 +108,8 @@ buttonFinalize.onclick = function toFinalize() {
         result.innerHTML += `<p class="itemdivresult">The smaller number registered was ${smaller}.</p>`
         result.innerHTML += `<p class="itemdivresult">The sum of all numbers is: ${sum}.</p>`
         result.innerHTML += `<p class="itemdivresult">The average of the numbers registered is: ${average}.</p>`
-    }   
+    }
+    txtNumber.focus();   
 }
 // Button Clean All
 let list = document.querySelector("#list")
@@ -134,4 +137,5 @@ buttonCleanAll.onclick = function toCleanAll() {
         result.removeChild(result.lastElementChild);
     }
     // Clean DIV Elements Result
+    txtNumber.focus();
 }
