@@ -55,7 +55,6 @@ function toRemove() {
     let resultItem = document.querySelector("#result"); // Clean DIV Elements Result
     if (newli) {
         listAdded.removeChild(listAdded.lastElementChild);
-        //newli?.remove();
         theValues.pop(); // Delete Elements Array
     } else if (firstitem) {
         firstitem?.remove();
@@ -116,7 +115,6 @@ let list = document.querySelector("#list")
 let firstitem = document.querySelector(".firstitem");
 let buttonCleanAll = document.querySelector("#buttoncleanall");
 buttonCleanAll.onclick = function toCleanAll() {
-    let number = Number(txtNumber.value);
     firstitem?.remove();
     // Clean UL Elements Result
     while (list.firstElementChild) {
