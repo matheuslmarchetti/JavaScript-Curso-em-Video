@@ -8,3 +8,5 @@
 <a href="https://matheuslmarchetti.github.io/JavaScript-Curso-em-Video/exercise04/exercise04.html" target="_blank">Let's Count</a>
 
 <a href="https://matheuslmarchetti.github.io/JavaScript-Curso-em-Video/exercise05/exercise05.html" target="_blank">Multiplication Table</a>
+
+<a href="https://matheuslmarchetti.github.io/JavaScript-Curso-em-Video/exercise06/exercise06.html" target="_blank">Number Analyzer</a>
